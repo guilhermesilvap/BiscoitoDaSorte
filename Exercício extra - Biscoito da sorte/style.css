@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%,#BB00FF  100%);
+    display: grid;
+    place-items: center;
+    height:100vh;
+
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes treme {
+    0% {margin-left: 0;}
+    15%{transform:rotate(3deg)}
+    25% {margin-left: 3px}
+    45%{transform:rotate(3deg)}
+    50% {margin-left: 0;}
+    75% {margin-left: 3px;}
+    100% {margin-left: 0;}
+  }
+
+@keyframes grow-up {
+    from{
+       transform: scale(0.1,0.1);
+       translate: 3px 170px; 
+    }
+    to{
+        
+    }
+  }
+
+.first-screen img:hover{
+    animation: treme 0.3s ease infinite;
+
+}
+
+main{
+    background: #FFFFFF;
+    width:42.8rem;
+    box-shadow: 0px 2rem 5rem ;
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+
+    text-align: center;
+}
+
+.hide{
+    display:none;
+}
+
+/*screen one*/
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #34355B;
+    margin-bottom: 1.4rem;
+}
+
+.first-screen p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    color:#34355B;
+    margin-bottom: 2rem;
+}
+
+.first-screen img{
+    cursor: pointer;
+}
+
+/*second sreen*/
+
+.second-screen p{
+    background-color: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem #555555;
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+    
+    font-size: 2.4rem;
+    color: #000000;
+    font-family: "Dancing Script", sans-serif;
+    text-align: center;
+    animation: grow-up 2s ease 1;  
+}
+
+
+button{
+background: #FF9500;
+padding:1.6rem;
+border-radius: .4rem;
+cursor:pointer;
+
+font-family: "DM sans", sans-serif;
+color:#FFFFFF;
+font-weight: bold;
+border:none;
+}
+
+button:hover{
+background:#cc7701 ;
+}
